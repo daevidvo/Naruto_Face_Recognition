@@ -60,3 +60,6 @@ model.compile(
 
 # training model
 model.fit(dataset_train, epochs=10,verbose=2)
+
+tf.saved_model.save(model, './model_data')
+print("model has been saved")
